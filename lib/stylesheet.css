@@ -70,13 +70,13 @@ input {
 
 input:focus {
   outline: none;
-  box-shadow: inset 0 0 6px red;
+  box-shadow: inset 0 0 6px #555;
 }
 
 input.green {
-  background: #98FB98;
+  background: #BBFFBB;
 }
 
 input.blue {
-  background: #6495ED;
+  background: #BBFFFF;
 }
