@@ -1,0 +1,82 @@
+html, body, div, input,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+table, tbody, tfoot, thead, tr, th, td, section, {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  font-family: sans-serif;
+	vertical-align: baseline;
+  -webkit-appearance: none;
+}
+
+body {
+  width: 900px;
+  padding: 20px;
+}
+
+table {
+  margin: auto;
+	border-spacing: 0;
+  -webkit-appearance: none;
+  border: 1px solid gray;
+  /*width: 198px;*/
+}
+
+button {
+  margin: 15px auto;
+  display: block;
+  padding: 10px 15px;
+  background: #4682B4;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+td {
+  /*height: 20px;
+  width: 20px;*/
+  border: 1px solid gray;
+}
+
+td:focus {
+  outline: none;
+
+
+}
+
+input {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  font-weight: bold;
+  font-size: 16px;
+  height: 22px;
+  width: 22px;
+  text-align: center;
+  /*vertical-align: middle;*/
+
+}
+
+input:focus {
+  outline: none;
+  box-shadow: inset 0 0 6px red;
+}
+
+input.green {
+  background: #98FB98;
+}
+
+input.blue {
+  background: #6495ED;
+}
