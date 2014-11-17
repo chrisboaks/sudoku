@@ -121,7 +121,8 @@
 
     <script>
       window.board = new S.Board();
-      window.c = board.cells  //          REMOVE FOR PRODUCTION
+      window.board.bindKeyHandlers();
+      window.c = board.cells;  //          REMOVE FOR PRODUCTION
     </script>
 
   </body>
