@@ -2,130 +2,154 @@
 <html>
 
   <head>
-    <title>Sudoku Solver</title>
+    <title>Simple Sudoku Solver</title>
     <link rel="stylesheet" href="lib/stylesheet.css" type="text/css">
   </head>
 
   <body>
-    <section id="sudoku">
 
-      <table>
-        <tr>
-          <td><input maxlength="1" data-cell-id="0"></td>
-          <td><input maxlength="1" data-cell-id="1"></td>
-          <td><input maxlength="1" data-cell-id="2"></td>
-          <td><input maxlength="1" data-cell-id="3"></td>
-          <td><input maxlength="1" data-cell-id="4"></td>
-          <td><input maxlength="1" data-cell-id="5"></td>
-          <td><input maxlength="1" data-cell-id="6"></td>
-          <td><input maxlength="1" data-cell-id="7"></td>
-          <td><input maxlength="1" data-cell-id="8"></td>
-        </tr>
-        <tr>
-          <td><input maxlength="1" data-cell-id="9"></td>
-          <td><input maxlength="1" data-cell-id="10"></td>
-          <td><input maxlength="1" data-cell-id="11"></td>
-          <td><input maxlength="1" data-cell-id="12"></td>
-          <td><input maxlength="1" data-cell-id="13"></td>
-          <td><input maxlength="1" data-cell-id="14"></td>
-          <td><input maxlength="1" data-cell-id="15"></td>
-          <td><input maxlength="1" data-cell-id="16"></td>
-          <td><input maxlength="1" data-cell-id="17"></td>
-        </tr>
-        <tr>
-          <td><input maxlength="1" data-cell-id="18"></td>
-          <td><input maxlength="1" data-cell-id="19"></td>
-          <td><input maxlength="1" data-cell-id="20"></td>
-          <td><input maxlength="1" data-cell-id="21"></td>
-          <td><input maxlength="1" data-cell-id="22"></td>
-          <td><input maxlength="1" data-cell-id="23"></td>
-          <td><input maxlength="1" data-cell-id="24"></td>
-          <td><input maxlength="1" data-cell-id="25"></td>
-          <td><input maxlength="1" data-cell-id="26"></td>
-        </tr>
-        <tr>
-          <td><input maxlength="1" data-cell-id="27"></td>
-          <td><input maxlength="1" data-cell-id="28"></td>
-          <td><input maxlength="1" data-cell-id="29"></td>
-          <td><input maxlength="1" data-cell-id="30"></td>
-          <td><input maxlength="1" data-cell-id="31"></td>
-          <td><input maxlength="1" data-cell-id="32"></td>
-          <td><input maxlength="1" data-cell-id="33"></td>
-          <td><input maxlength="1" data-cell-id="34"></td>
-          <td><input maxlength="1" data-cell-id="35"></td>
-        </tr>
-        <tr>
-          <td><input maxlength="1" data-cell-id="36"></td>
-          <td><input maxlength="1" data-cell-id="37"></td>
-          <td><input maxlength="1" data-cell-id="38"></td>
-          <td><input maxlength="1" data-cell-id="39"></td>
-          <td><input maxlength="1" data-cell-id="40"></td>
-          <td><input maxlength="1" data-cell-id="41"></td>
-          <td><input maxlength="1" data-cell-id="42"></td>
-          <td><input maxlength="1" data-cell-id="43"></td>
-          <td><input maxlength="1" data-cell-id="44"></td>
-        </tr>
-        <tr>
-          <td><input maxlength="1" data-cell-id="45"></td>
-          <td><input maxlength="1" data-cell-id="46"></td>
-          <td><input maxlength="1" data-cell-id="47"></td>
-          <td><input maxlength="1" data-cell-id="48"></td>
-          <td><input maxlength="1" data-cell-id="49"></td>
-          <td><input maxlength="1" data-cell-id="50"></td>
-          <td><input maxlength="1" data-cell-id="51"></td>
-          <td><input maxlength="1" data-cell-id="52"></td>
-          <td><input maxlength="1" data-cell-id="53"></td>
-        </tr>
-        <tr>
-          <td><input maxlength="1" data-cell-id="54"></td>
-          <td><input maxlength="1" data-cell-id="55"></td>
-          <td><input maxlength="1" data-cell-id="56"></td>
-          <td><input maxlength="1" data-cell-id="57"></td>
-          <td><input maxlength="1" data-cell-id="58"></td>
-          <td><input maxlength="1" data-cell-id="59"></td>
-          <td><input maxlength="1" data-cell-id="60"></td>
-          <td><input maxlength="1" data-cell-id="61"></td>
-          <td><input maxlength="1" data-cell-id="62"></td>
-        </tr>
-        <tr>
-          <td><input maxlength="1" data-cell-id="63"></td>
-          <td><input maxlength="1" data-cell-id="64"></td>
-          <td><input maxlength="1" data-cell-id="65"></td>
-          <td><input maxlength="1" data-cell-id="66"></td>
-          <td><input maxlength="1" data-cell-id="67"></td>
-          <td><input maxlength="1" data-cell-id="68"></td>
-          <td><input maxlength="1" data-cell-id="69"></td>
-          <td><input maxlength="1" data-cell-id="70"></td>
-          <td><input maxlength="1" data-cell-id="71"></td>
-        </tr>
-        <tr>
-          <td><input maxlength="1" data-cell-id="72"></td>
-          <td><input maxlength="1" data-cell-id="73"></td>
-          <td><input maxlength="1" data-cell-id="74"></td>
-          <td><input maxlength="1" data-cell-id="75"></td>
-          <td><input maxlength="1" data-cell-id="76"></td>
-          <td><input maxlength="1" data-cell-id="77"></td>
-          <td><input maxlength="1" data-cell-id="78"></td>
-          <td><input maxlength="1" data-cell-id="79"></td>
-          <td><input maxlength="1" data-cell-id="80"></td>
-        </tr>
-      </table>
+    <div class="content group">
 
-      <button>Solve!</button>
+      <div class="content-group group">
+        <h1>Simple Sudoku Solver!</h1>
 
-    </section>
+        <section id="description">
+          <p>
+            Do you love Sudoku puzzles, but hate solving puzzles?
+          </p>
+          <p>
+            Then you've come to the right place!
+          </p>
+          <p>
+            Simply enter your puzzle to the right and click "Solve!" to see the solution.
+          </p>
+          <p>
+            If you're just looking for a little help, click the "Hint!" button instead.
+          </p>
+        </section>
 
-    <script src="./lib/jquery-1.11.1.js"></script>
-    <script src="./lib/underscore.js"></script>
-    <script src="./lib/cell.js"></script>
-    <script src="./lib/board.js"></script>
-    <script src="./lib/samples.js"></script>
+        <section id="sudoku">
+          <table>
+            <tr>
+              <td><input maxlength="1" data-cell-id="0"></td>
+              <td><input maxlength="1" data-cell-id="1"></td>
+              <td><input maxlength="1" data-cell-id="2"></td>
+              <td><input maxlength="1" data-cell-id="3"></td>
+              <td><input maxlength="1" data-cell-id="4"></td>
+              <td><input maxlength="1" data-cell-id="5"></td>
+              <td><input maxlength="1" data-cell-id="6"></td>
+              <td><input maxlength="1" data-cell-id="7"></td>
+              <td><input maxlength="1" data-cell-id="8"></td>
+            </tr>
+            <tr>
+              <td><input maxlength="1" data-cell-id="9"></td>
+              <td><input maxlength="1" data-cell-id="10"></td>
+              <td><input maxlength="1" data-cell-id="11"></td>
+              <td><input maxlength="1" data-cell-id="12"></td>
+              <td><input maxlength="1" data-cell-id="13"></td>
+              <td><input maxlength="1" data-cell-id="14"></td>
+              <td><input maxlength="1" data-cell-id="15"></td>
+              <td><input maxlength="1" data-cell-id="16"></td>
+              <td><input maxlength="1" data-cell-id="17"></td>
+            </tr>
+            <tr>
+              <td><input maxlength="1" data-cell-id="18"></td>
+              <td><input maxlength="1" data-cell-id="19"></td>
+              <td><input maxlength="1" data-cell-id="20"></td>
+              <td><input maxlength="1" data-cell-id="21"></td>
+              <td><input maxlength="1" data-cell-id="22"></td>
+              <td><input maxlength="1" data-cell-id="23"></td>
+              <td><input maxlength="1" data-cell-id="24"></td>
+              <td><input maxlength="1" data-cell-id="25"></td>
+              <td><input maxlength="1" data-cell-id="26"></td>
+            </tr>
+            <tr>
+              <td><input maxlength="1" data-cell-id="27"></td>
+              <td><input maxlength="1" data-cell-id="28"></td>
+              <td><input maxlength="1" data-cell-id="29"></td>
+              <td><input maxlength="1" data-cell-id="30"></td>
+              <td><input maxlength="1" data-cell-id="31"></td>
+              <td><input maxlength="1" data-cell-id="32"></td>
+              <td><input maxlength="1" data-cell-id="33"></td>
+              <td><input maxlength="1" data-cell-id="34"></td>
+              <td><input maxlength="1" data-cell-id="35"></td>
+            </tr>
+            <tr>
+              <td><input maxlength="1" data-cell-id="36"></td>
+              <td><input maxlength="1" data-cell-id="37"></td>
+              <td><input maxlength="1" data-cell-id="38"></td>
+              <td><input maxlength="1" data-cell-id="39"></td>
+              <td><input maxlength="1" data-cell-id="40"></td>
+              <td><input maxlength="1" data-cell-id="41"></td>
+              <td><input maxlength="1" data-cell-id="42"></td>
+              <td><input maxlength="1" data-cell-id="43"></td>
+              <td><input maxlength="1" data-cell-id="44"></td>
+            </tr>
+            <tr>
+              <td><input maxlength="1" data-cell-id="45"></td>
+              <td><input maxlength="1" data-cell-id="46"></td>
+              <td><input maxlength="1" data-cell-id="47"></td>
+              <td><input maxlength="1" data-cell-id="48"></td>
+              <td><input maxlength="1" data-cell-id="49"></td>
+              <td><input maxlength="1" data-cell-id="50"></td>
+              <td><input maxlength="1" data-cell-id="51"></td>
+              <td><input maxlength="1" data-cell-id="52"></td>
+              <td><input maxlength="1" data-cell-id="53"></td>
+            </tr>
+            <tr>
+              <td><input maxlength="1" data-cell-id="54"></td>
+              <td><input maxlength="1" data-cell-id="55"></td>
+              <td><input maxlength="1" data-cell-id="56"></td>
+              <td><input maxlength="1" data-cell-id="57"></td>
+              <td><input maxlength="1" data-cell-id="58"></td>
+              <td><input maxlength="1" data-cell-id="59"></td>
+              <td><input maxlength="1" data-cell-id="60"></td>
+              <td><input maxlength="1" data-cell-id="61"></td>
+              <td><input maxlength="1" data-cell-id="62"></td>
+            </tr>
+            <tr>
+              <td><input maxlength="1" data-cell-id="63"></td>
+              <td><input maxlength="1" data-cell-id="64"></td>
+              <td><input maxlength="1" data-cell-id="65"></td>
+              <td><input maxlength="1" data-cell-id="66"></td>
+              <td><input maxlength="1" data-cell-id="67"></td>
+              <td><input maxlength="1" data-cell-id="68"></td>
+              <td><input maxlength="1" data-cell-id="69"></td>
+              <td><input maxlength="1" data-cell-id="70"></td>
+              <td><input maxlength="1" data-cell-id="71"></td>
+            </tr>
+            <tr>
+              <td><input maxlength="1" data-cell-id="72"></td>
+              <td><input maxlength="1" data-cell-id="73"></td>
+              <td><input maxlength="1" data-cell-id="74"></td>
+              <td><input maxlength="1" data-cell-id="75"></td>
+              <td><input maxlength="1" data-cell-id="76"></td>
+              <td><input maxlength="1" data-cell-id="77"></td>
+              <td><input maxlength="1" data-cell-id="78"></td>
+              <td><input maxlength="1" data-cell-id="79"></td>
+              <td><input maxlength="1" data-cell-id="80"></td>
+            </tr>
+          </table>
+          <button id="solve-button">Solve!</button>
 
-    <script>
-      window.board = new S.Board();
-      window.board.bindKeyHandlers();
-      window.c = board.cells;  //          REMOVE FOR PRODUCTION
-    </script>
+        </section>
+      </div>
+
+
+    </div>
+
+    <div class="scripts">
+      <script src="./lib/jquery-1.11.1.js"></script>
+      <script src="./lib/underscore.js"></script>
+      <script src="./lib/cell.js"></script>
+      <script src="./lib/board.js"></script>
+      <script src="./lib/samples.js"></script>
+
+      <script>
+        window.board = new S.Board();
+        window.board.bindKeyHandlers();
+      </script>
+    </div>
 
   </body>
 </html>
