@@ -1,4 +1,4 @@
-html, body, div, input,
+html, body, div, input, ul, li,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 table, tbody, tfoot, thead, tr, th, td, section {
 	margin: 0;
@@ -10,6 +10,11 @@ table, tbody, tfoot, thead, tr, th, td, section {
 	vertical-align: baseline;
   -webkit-appearance: none;
 	-moz-appearance: none;
+}
+
+ul {
+	list-style: none;
+	display: inline-block;
 }
 
 .group:after {
@@ -41,6 +46,11 @@ table {
   border: 1px solid gray;
 }
 
+li {
+	float: left;
+	padding-left: 0 20px;
+}
+
 #description {
 	display: block;
 	float:left;
@@ -50,6 +60,7 @@ table {
 #sudoku {
 	display: block;
 	float: right;
+	text-align: center;
 }
 
 h1 {
@@ -67,10 +78,26 @@ p {
 	font-size: 20px;
 }
 
+.solver {
+	width: 86px;
+}
+
+.populate {
+	background: #32CD32;
+	width: 155px;
+	margin: 10px 10px;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.populate:hover {
+	background: #228B22;
+}
+
 button {
-  margin: 15px auto;
   display: block;
   padding: 10px 15px;
+	margin: 20px 30px;
   background: #1E90FF;
   border: 0;
   border-radius: 10px;
@@ -84,6 +111,10 @@ button {
 button:hover {
   cursor: pointer;
 	background: #4682B4;
+}
+
+button:focus {
+	outline: none;
 }
 
 td {

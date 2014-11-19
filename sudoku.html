@@ -26,6 +26,14 @@
           <p>
             If you're just looking for a little help, click the "Hint!" button instead.
           </p>
+
+          <ul class="group">
+            <li><button class="populate" id="pop-easiest">Try an EASY puzzle</button></li>
+            <li><button class="populate" id="pop-gentle">Try a GENTLE puzzle</button></li>
+            <li><button class="populate" id="pop-medium">Try a MEDIUM puzzle</button></li>
+            <li><button class="populate" id="pop-hard">Try a HARD puzzle</button></li>
+            <li><button class="populate" id="pop-evil">Try an EVIL puzzle</button></li>
+          </ul>
         </section>
 
         <section id="sudoku">
@@ -130,7 +138,11 @@
               <td><input maxlength="1" data-cell-id="80"></td>
             </tr>
           </table>
-          <button id="solve-button">Solve!</button>
+
+          <ul class="group">
+            <li><button id="solve-button" class="solver">Solve!</button></li>
+            <li><button id="hint-button" class="solver">Hint!</button></li>
+          </ul>
 
         </section>
       </div>
