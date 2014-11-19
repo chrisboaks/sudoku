@@ -135,6 +135,7 @@ input {
   height: 30px;
   width: 30px;
   text-align: center;
+	transition: color 2s;
 }
 
 input:focus {
@@ -148,4 +149,9 @@ input:focus {
 
 .blue {
   background: #CCFFFF;
+}
+
+.red {
+	color: red;
+	transition: color 0s;
 }
