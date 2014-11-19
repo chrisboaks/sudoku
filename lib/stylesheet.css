@@ -32,12 +32,13 @@ div.content {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translatex(-366px) translatey(-268px);
+	transform: translatex(-381px) translatey(-267px);
 	padding: 30px;
 	margin: auto;
 	width: 700px;
 	background: #FFFFFF;
 	border: 1px solid #AAA;
+	padding-bottom: 20px;
 }
 
 table {
@@ -58,6 +59,7 @@ li {
 }
 
 #sudoku {
+	padding-top: 4px;
 	display: block;
 	float: right;
 	text-align: center;
@@ -84,9 +86,9 @@ p {
 
 .populate {
 	background: #32CD32;
-	width: 155px;
-	margin: 10px 10px;
-	font-size: 14px;
+	width: 270px;
+	margin: 8px 40px;
+	font-size: 16px;
 	border-radius: 3px;
 }
 
