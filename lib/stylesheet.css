@@ -6,7 +6,7 @@ table, tbody, tfoot, thead, tr, th, td, section {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-  font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	vertical-align: baseline;
   -webkit-appearance: none;
 	-moz-appearance: none;
@@ -29,10 +29,11 @@ body {
 }
 
 div.content {
+	border-radius: 60px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translatex(-381px) translatey(-267px);
+	transform: translatex(-381px) translatey(-271px);
 	padding: 30px;
 	margin: auto;
 	width: 700px;
@@ -59,7 +60,7 @@ li {
 }
 
 #sudoku {
-	padding-top: 4px;
+	padding-top: 12px;
 	display: block;
 	float: right;
 	text-align: center;
